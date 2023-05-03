@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body h2{
+    width: 30%;
+    text-align: left;
+    padding: 5px;
+}
+
+h1#gameover{
+    color: red;
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
