@@ -6,11 +6,40 @@ body{
 body h2{
     width: 30%;
     text-align: left;
-    padding: 5px;
 }
 
 h1#gameover{
     color: red;
     font-size: 35px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.playbuttons{
+    display: none;
+}
+.playbuttons button{
+    font-size: 35px;
+    width: 60px;
+    margin-bottom: 5px;
+    margin-right: 18px;
+    margin-left: 18px;
+}
+@media(max-width:768px){
+    body h1#tp{
+        font-size: 20px;
+    }
+    body h2{
+        font-size: 20px;
+    }
+    .playbuttons{
+        display: block;
+    }
+}
+@media(max-width:570px){
+    canvas{
+        width: 90%;
+    }
+    body h2{
+        width: 90%;
+        text-align: left;
+    }
 }

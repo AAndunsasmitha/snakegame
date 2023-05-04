@@ -9,10 +9,17 @@
 </head>
 <body>
     
-    <h1>Snake Game</h1>
+    <h1 id="tp">Snake Game</h1>
     <center><h2 id="score">Score: 0</h2></center>
     <canvas id="board"></canvas>
     <center><h1 id="gameover"></h1></center>
     <center><button id="new" type="button" onClick="window.location.reload()" >Restart</button></center>
+
+    <center><div class="playbuttons" id="pb">
+        <button id="up" onclick="goUp()">⬆</button><br>
+        <button id="left" onclick="goLeft()">⬅</button>
+        <button id="right" onclick="goRight()">➡</button><br>
+        <button id="down" onclick="goDown()">⬇</button>
+    </div></center>
 </body>
 </html>

@@ -76,6 +76,7 @@ function update(){
         overMsg = "GAME OVER";
         document.getElementById("gameover").innerHTML = overMsg;
         document.getElementById("new").style.display = "block";
+        document.getElementById("pb").style.display = "none";
     }
     for(i=0; i<snakeBody.length; i++){
         if(snakeHeadX==snakeBody[i][0] && snakeHeadY==snakeBody[i][1]){
@@ -83,6 +84,7 @@ function update(){
             overMsg = "GAME OVER";
             document.getElementById("gameover").innerHTML = overMsg;
             document.getElementById("new").style.display = "block";
+            document.getElementById("pb").style.display = "none";
         }
     }
 
@@ -102,6 +104,28 @@ function placeFood(){
     foodY = Math.floor(Math.random()*rows)*blockSize;
 }
 
+function goUp(){
+    if(velocityY != 1){
+        velocityX = 0;
+        velocityY = -1;
+    }
+}
+function goDown(){
+    if(velocityY != -1){
+        velocityX=0;
+        velocityY=1;
+    }
+}function goLeft(){
+    if(velocityX != 1){
+        velocityX=-1;
+        velocityY=0;
+    }
+}function goRight(){
+    if(velocityX != -1){
+        velocityX = 1;
+        velocityY = 0;
+    }
+}
 function changeDirection(e){
     if(e.code == "ArrowUp" && velocityY != 1){
         velocityX = 0;
